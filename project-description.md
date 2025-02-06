@@ -36,4 +36,4 @@ Develop an ensemble model that integrates various machine learning techniques to
 
 ## **Expected Outcome**
 
-A comprehensive predictive tool that demonstrates proficiency in applying a variety of machine learning techniques to financial data, providing insights into stock price movements and offering a valuable portfolio piece for quantitative finance roles.
+A comprehensive predictive tool that demonstrates proficiency in applying a variety of machine learning techniques to financial data, providing insights into stock price movements.

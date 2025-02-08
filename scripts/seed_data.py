@@ -7,6 +7,10 @@ def download_stock_price_data(
 ):
     # Download stock data from the internet
     file_path = f"{raw_data_dir}/{ticker}.csv"
+    
+    # if raw_data_dir does not exist, create it
+    if not os.path.exists(raw_data_dir):
+        os.makedirs(raw_data_dir)
 
     if not os._exists(raw_data_dir):
         data = yf.download(ticker, start=start_date, end=end_date)
@@ -21,6 +25,9 @@ def download_stock_fundimental_data(
 ):
     # Download stock data from the internet
     file_path = f"{raw_data_dir}/{ticker}.csv"
+    
+    if not os.path.exists(raw_data_dir):
+        os.makedirs(raw_data_dir)
 
     ticker_data = yf.Ticker(ticker)
 

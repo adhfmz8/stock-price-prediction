@@ -7,7 +7,7 @@ def download_stock_price_data(
 ):
     # Download stock data from the internet
     file_path = f"{raw_data_dir}/{ticker}.csv"
-    
+
     # if raw_data_dir does not exist, create it
     if not os.path.exists(raw_data_dir):
         os.makedirs(raw_data_dir)
@@ -25,7 +25,7 @@ def download_stock_fundimental_data(
 ):
     # Download stock data from the internet
     file_path = f"{raw_data_dir}/{ticker}/"
-    
+
     if not os.path.exists(file_path):
         os.makedirs(file_path)
 
@@ -35,7 +35,9 @@ def download_stock_fundimental_data(
 
     if balance_sheet is not None:
         balance_sheet.to_csv(file_path + "balance_sheet.csv")
-        print(f"Downloaded {ticker} balance sheet data to {file_path + "balance_sheet.csv"}")
+        print(
+            f"Downloaded {ticker} balance sheet data to {file_path + "balance_sheet.csv"}"
+        )
     else:
         print(f"No balance sheet data for {ticker}")
 
@@ -77,7 +79,7 @@ def main():
     end_date = "2025-01-01"
 
     for ticker in ticker_list:
-        #download_stock_price_data(ticker, start_date, end_date)
+        download_stock_price_data(ticker, start_date, end_date)
         download_stock_fundimental_data(ticker)
 
 

@@ -6,10 +6,11 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "matplotlib>=3.10.0",
-    "numpy>=2.2.2",
+    "numpy==1.26.4",
     "scikit-learn>=1.6.1",
     "seaborn>=0.13.2",
     "statsmodels>=0.14.4",
+    "tensorflow>=2.18.1",
     "xgboost>=3.0.0",
     "yfinance>=0.2.52",
 ]

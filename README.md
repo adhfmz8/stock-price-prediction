@@ -1,5 +1,9 @@
 # stock-price-prediction
 
+## Running
+
+Seed data by running scripts/seed_data.py, and hope your environment works to run the notebooks.
+
 ## For env setup
 
 Install uv (macos and linux)
